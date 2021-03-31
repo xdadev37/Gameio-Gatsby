@@ -1,0 +1,83 @@
+@import "./ColorValues";
+
+@mixin Flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin Button {
+  padding: 0.5rem 4rem;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.navbar {
+  @include Flex;
+  background-color: $ourKellie;
+  color: #fff;
+  justify-content: space-around;
+  position: fixed;
+  display: flex;
+  width: 100%;
+
+  a {
+    margin: 0 1.5rem;
+  }
+}
+
+.leftNav {
+  display: flex;
+  margin-left: -15%;
+
+  .logo {
+    font-size: xx-large;
+    display: block;
+    margin-top: -35%;
+
+    sup {
+      margin: 0 -1rem;
+      font-size: x-large;
+    }
+  }
+
+  a {
+    margin-top: 3%;
+  }
+
+  a:hover {
+    color: #000;
+    transition-duration: 400ms;
+  }
+}
+
+.rightNav {
+  a {
+    transition-duration: 200ms;
+  }
+
+  .signUp {
+    border: 2px solid $red;
+    color: $red;
+    @include Button;
+
+    &:hover {
+      background-color: $red;
+      color: #fff;
+      border: 2px solid #fff;
+    }
+  }
+
+  .login {
+    margin-right: -15rem;
+    border: 2px solid $green;
+    color: $green;
+    @include Button;
+
+    &:hover {
+      background-color: $green;
+      color: #fff;
+      border: 2px solid #fff;
+    }
+  }
+}
