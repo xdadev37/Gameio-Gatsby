@@ -9,8 +9,8 @@ const MainPage = () => {
         }
 
         if (e.keyCode === 33 ||
-            e.keyCode === 38 ||
-            e.keyCode === 36) {
+            e.keyCode === 36 ||
+            e.keyCode === 38) {
             window.scrollTo(0, 0)
         }
 
