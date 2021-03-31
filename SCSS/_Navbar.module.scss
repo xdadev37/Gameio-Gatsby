@@ -13,12 +13,10 @@
 }
 
 .navbar {
-  @include Flex;
   background-color: $ourKellie;
   color: #fff;
   justify-content: space-around;
   position: fixed;
-  display: flex;
   width: 100%;
 
   a {
@@ -28,7 +26,7 @@
 
 .leftNav {
   display: flex;
-  margin-left: -15%;
+  float: left;
 
   .logo {
     font-size: xx-large;
@@ -52,6 +50,10 @@
 }
 
 .rightNav {
+  margin-top: 13px;
+  display: flex;
+  float: right;
+
   a {
     transition-duration: 200ms;
   }
@@ -69,7 +71,6 @@
   }
 
   .login {
-    margin-right: -15rem;
     border: 2px solid $green;
     color: $green;
     @include Button;
