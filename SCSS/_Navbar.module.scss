@@ -31,7 +31,7 @@
   .logo {
     font-size: xx-large;
     display: block;
-    margin-top: -35%;
+    align-self: center;
 
     sup {
       margin: 0 -1rem;
@@ -40,7 +40,7 @@
   }
 
   a {
-    margin-top: 3%;
+    align-self: center;
   }
 
   a:hover {
@@ -50,7 +50,6 @@
 }
 
 .rightNav {
-  margin-top: 13px;
   display: flex;
   float: right;
 
@@ -59,6 +58,8 @@
   }
 
   .signUp {
+    display: flex;
+    align-self: center;
     border: 2px solid $red;
     color: $red;
     @include Button;
@@ -71,6 +72,8 @@
   }
 
   .login {
+    display: flex;
+    align-self: center;
     border: 2px solid $green;
     color: $green;
     @include Button;
