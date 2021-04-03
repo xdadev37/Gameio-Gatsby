@@ -4,7 +4,7 @@
   background-image: linear-gradient(65deg, $yellow, $red);
   color: #fff;
   font-style: italic;
-  height: 50rem;
+  height: 46.4rem;
 
   h1,
   p {
@@ -23,7 +23,6 @@
     content: url("borderStyle.svg");
     width: 15rem;
     margin: 0 40%;
-    display: flex;
 
     &:last-child {
       transform: rotateZ(180deg);
