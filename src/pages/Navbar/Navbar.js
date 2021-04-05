@@ -4,18 +4,18 @@ import * as styles from '../../../SCSS/styles.module.scss'
 
 const Navbar = () => {
     return (
-        <div className={styles.navbar} >
-            <div className={styles.leftNav} >
+        <navbar className={styles.navbar} >
+            <nav className={styles.leftNav} >
                 <Link to='/' ><span className={styles.logo} >\/<sup>\/</sup>\/</span></Link>
-                <Link to='/' ><a>Home</a></Link>
-                <Link ><a>Guide</a></Link>
-                <Link ><a>About</a></Link>
-            </div>
-            <div className={styles.rightNav} >
-                <Link ><a className={styles.signUp} >Signup</a></Link>
-                <Link ><a className={styles.login} >Login</a></Link>
-            </div>
-        </div>
+                <Link to='/' ><li>Home</li></Link>
+                <Link ><li>Guide</li></Link>
+                <Link ><li>About</li></Link>
+            </nav>
+            <nav className={styles.rightNav} >
+                <Link ><li className={styles.login} >Login</li></Link>
+                <Link ><li className={styles.signUp} >Signup</li></Link>
+            </nav>
+        </navbar>
     );
 }
 

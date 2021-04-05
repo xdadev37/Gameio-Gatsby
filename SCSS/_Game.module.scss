@@ -1,8 +1,22 @@
+@import "./ColorValues";
+
+@keyframes gamePageNotes {
+  to {
+    transform: translateY(-250px);
+  }
+}
+
 .gamePage {
-  .gameAnime {
-    span {
-      i:first-child {
-      }
-    }
+  height: 47rem;
+  background-image: url("../src/pages/GameRunPage/preview.gif");
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.gamePageAnime {
+  div {
+    animation: gamePageNotes 1s ease-in-out both;
   }
 }
