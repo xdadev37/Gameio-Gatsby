@@ -2,17 +2,36 @@
 
 @keyframes gamePageNotes {
   to {
-    transform: translateY(-250px);
+    transform: translateY(20px);
   }
 }
 
 .gamePage {
-  height: 47rem;
+  height: 46.7rem;
   background-image: url("../src/pages/GameRunPage/preview.gif");
   background-size: cover;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  color: #fff;
+  flex-wrap: wrap;
+  
+  div {
+    transform: translateY(300px);
+    margin: 0 2rem;
+    height: 20rem;
+  }
+
+  div:first-child {
+    background-image: linear-gradient(65deg, $blue, $tamarama, $purple);
+    padding: 1.5rem 3rem;
+    border-radius: 11px;
+  }
+
+  div:last-child {
+    background-image: linear-gradient(65deg, $blue, $pink, $red);
+    padding: 1rem 3rem;
+    border-radius: 11px;
+  }
 }
 
 .gamePageAnime {

@@ -3,6 +3,7 @@
 @import "./Guide.module";
 @import "./Game.module";
 @import "./ColorValues";
+@import "./About.module";
 
 html,
 body {
@@ -28,7 +29,7 @@ a {
   }
 }
 
-@media screen and (max-width: 1045px) {
+@media screen and (max-width: 878px) {
   html,
   body {
     overflow-y: visible;
