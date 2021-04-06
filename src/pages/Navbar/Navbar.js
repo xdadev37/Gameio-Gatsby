@@ -8,8 +8,12 @@ const Navbar = () => {
             <nav className={styles.leftNav} >
                 <Link to='/' ><span className={styles.logo} >\/<sup>\/</sup>\/</span></Link>
                 <Link to='/' ><li>Home</li></Link>
-                <Link to='#guide' ><li>Guide</li></Link>
-                <Link to='#gamePage' ><li>Game</li></Link>
+                <li onClick={() => {
+                    window.scrollTo(0, 750)
+                }} >Guide</li>
+                <li onClick={() => {
+                    window.scrollTo(0, 1500)
+                }} >Game</li>
                 <Link to='#about' ><li>About</li></Link>
             </nav>
             <nav className={styles.rightNav} >

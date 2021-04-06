@@ -20,6 +20,7 @@
   z-index: 1000;
 
   li {
+    cursor: pointer;
     margin: 0 1rem;
     list-style: none;
   }
@@ -29,13 +30,12 @@
   display: flex;
   float: left;
   align-items: center;
-  
-  
+
   .logo {
     font-size: xx-large;
     display: block;
     margin: 0 1.5rem;
-    
+
     sup {
       margin: 0 -1rem;
       font-size: x-large;
@@ -47,7 +47,7 @@
     align-items: center;
     padding: 0 0.5rem;
   }
-  
+
   li:hover {
     color: #000;
     transition-duration: 400ms;

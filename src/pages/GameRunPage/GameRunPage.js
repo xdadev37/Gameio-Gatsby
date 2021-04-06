@@ -3,7 +3,7 @@ import * as styles from '../../../SCSS/styles.module.scss'
 
 const Game = () => {
     window.onscroll = () => {
-        if (window.scrollY === 1497) {
+        if (window.scrollY > 750) {
             document.getElementById('gamePage').classList.add(styles.gamePageAnime)
         }
     }

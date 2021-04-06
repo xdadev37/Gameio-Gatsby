@@ -1,0 +1,14 @@
+@import "./ColorValues";
+
+.about {
+    background-image: linear-gradient(65deg, $red, $poppySurprise);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+
+    i {
+        display: block;
+        line-height: 2rem;
+    }
+}

@@ -1,19 +1,19 @@
-import React from 'react'
-import MainPage from './Main/index'
-import Navbar from './Navbar/Navbar'
-import Guide from './Guide/index'
-import Game from './GameRunPage/GameRunPage'
-import About from './About/About'
+import React, { Suspense, lazy } from 'react'
+const MainPage = lazy(() => import('./Main/index'))
+const Navbar = lazy(() => import('./Navbar/Navbar'))
+const Guide = lazy(() => import('./Guide/index'))
+const Game = lazy(() => import('./GameRunPage/GameRunPage'))
+const About = lazy(() => import('./About/About'))
 
 const Index = () => {
   return (
-    <>
+    <Suspense fallback={<div>Loading ...</div>} >
       <Navbar />
       <MainPage />
       <Guide />
       <Game />
       <About />
-    </>
+    </Suspense>
   );
 }
 
