@@ -5,10 +5,10 @@
   </a>
 </p>
 <h1 align="center">
-  Gameio Website Created Using Gatsby for CV
+  PouRia Sedighi Arfaee
 </h1>
 
-<h2>PouRia Sedighi Arfaee</h2>
+<h2>Gameio Website Created Using Gatsby for CV</h2>
 
 Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
