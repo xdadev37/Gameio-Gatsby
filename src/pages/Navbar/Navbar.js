@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import * as styles from '../../../SCSS/styles.module.scss'
+import Login from '../Login/index'
 
 const Navbar = () => {
     return (
-        <navbar className={styles.navbar} >
+        <div className={styles.navbar} >
             <nav className={styles.leftNav} >
                 <Link to='/' ><span className={styles.logo} >\/<sup>\/</sup>\/</span></Link>
                 <Link to='/' ><li>Home</li></Link>
@@ -17,10 +18,10 @@ const Navbar = () => {
                 <Link to='#about' ><li>About</li></Link>
             </nav>
             <nav className={styles.rightNav} >
-                <Link ><li className={styles.login} >Login</li></Link>
-                <Link ><li className={styles.signUp} >Signup</li></Link>
+                <Link to='/Login' ><li className={styles.login} >Login</li></Link>
+                <Link to='/Signup' ><li className={styles.signUp} >Signup</li></Link>
             </nav>
-        </navbar>
+        </div>
     );
 }
 

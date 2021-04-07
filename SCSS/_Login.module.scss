@@ -1,0 +1,14 @@
+@import "./ColorValues";
+
+.loginPage {
+  display: flex;
+  flex-direction: column;
+  background-color: $black;
+  color: #fff;
+
+  form {
+    button {
+      margin: 13px 0;
+    }
+  }
+}
