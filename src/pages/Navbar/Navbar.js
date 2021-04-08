@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import * as styles from '../../../SCSS/styles.module.scss'
 import Login from '../Login/index'
 
 const Navbar = () => {
+    const [loginButton, setLoginButton] = useState(false)
+
     return (
         <div className={styles.navbar} >
             <nav className={styles.leftNav} >
@@ -17,10 +19,10 @@ const Navbar = () => {
                 }} >Game</li>
                 <Link to='#about' ><li>About</li></Link>
             </nav>
-            <nav className={styles.rightNav} >
-                <Link to='/Login' ><li className={styles.login} >Login</li></Link>
-                <Link to='/Signup' ><li className={styles.signUp} >Signup</li></Link>
-            </nav>
+            {loginButton ? <Login setLoginButton={setLoginButton} /> : <nav className={styles.rightNav} >
+                <li onClick={() => setLoginButton(true)} className={styles.login} >Login</li>
+                <Link to='/Login'><li className={styles.signUp} >Signup</li></Link>
+            </nav>}
         </div>
     );
 }

@@ -1,14 +1,40 @@
 @import "./ColorValues";
+@import "./Navbar.module";
 
 .loginPage {
   display: flex;
   flex-direction: column;
   background-color: $black;
   color: #fff;
+  width: 50%;
+  float: right;
 
   form {
+    display: flex;
+    align-items: center;
+    flex: 1;
+
+    label,
     button {
-      margin: 13px 0;
+      margin: 1% 2%;
+    }
+
+    input {
+      border-radius: 5px;
+      padding: 5px;
+    }
+
+    button {
+      @include Button;
+      padding: 10px 30px;
+    }
+
+    span {
+      display: block;
+      float: left;
+      cursor: pointer;
+      border: 1rem solid transparent;
+      border-right-color: #fff;
     }
   }
 }
