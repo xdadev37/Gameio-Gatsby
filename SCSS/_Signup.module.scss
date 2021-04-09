@@ -2,12 +2,11 @@
 @import "./Navbar.module";
 
 .signUpPage {
-  background-color: $black;
   display: flex;
   justify-content: center;
   line-height: 2rem;
   padding: 1% 0;
-  
+
   form {
     padding: 0 10%;
     background-color: #fff;
@@ -45,11 +44,28 @@
   .birthdayForm {
     justify-content: space-around;
     display: flex;
+    flex-wrap: wrap;
   }
 
   button {
     @include Button;
-    width: 20%;
+    padding: 10px 30px;
     margin: 13px 0;
+  }
+}
+
+.signUp {
+  background: $black;
+
+  .leftNav {
+    background-color: transparent;
+    flex-direction: column;
+    color: #fff;
+    width: 50px;
+
+    span:hover,
+    li:hover {
+      color: $red;
+    }
   }
 }

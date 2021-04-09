@@ -2,15 +2,16 @@ import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import * as styles from '../../../SCSS/styles.module.scss'
 import Login from '../Login/index'
+import Home from './HomeComponent'
 
 const Navbar = () => {
     const [loginButton, setLoginButton] = useState(false)
 
     return (
-        <div className={styles.navbar} >
+        <div className={styles.navbar} id='navbar'>
+            <span onClick={() => { document.getElementById('navbar').classList.toggle(styles.hamMenuOpened) }}></span>
             <nav className={styles.leftNav} >
-                <Link to='/' ><span className={styles.logo} >\/<sup>\/</sup>\/</span></Link>
-                <Link to='/' ><li>Home</li></Link>
+                <Home />
                 <li onClick={() => {
                     window.scrollTo(0, 750)
                 }} >Guide</li>
@@ -21,7 +22,7 @@ const Navbar = () => {
             </nav>
             {loginButton ? <Login setLoginButton={setLoginButton} /> : <nav className={styles.rightNav} >
                 <li onClick={() => setLoginButton(true)} className={styles.login} >Login</li>
-                <Link to='/Login'><li className={styles.signUp} >Signup</li></Link>
+                <Link to='/Signup'><li className={styles.signUp} >Signup</li></Link>
             </nav>}
         </div>
     );

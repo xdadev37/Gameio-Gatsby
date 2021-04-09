@@ -4,11 +4,13 @@ import * as styles from '../../../SCSS/styles.module.scss'
 const Signup = (props) => {
     return (<div className={styles.loginPage}>
         <form>
-            <span onClick={() => {props.setLoginButton(false)}}></span>
-            <label htmlFor="email">E-mail : </label>
+            <span onClick={() => { props.setLoginButton(false) }}></span>
+            <label htmlFor="email">E-mail :
             <input type="email" />
-            <label htmlFor="password">Password : </label>
+            </label>
+            <label htmlFor="password">Password :
             <input type="password" />
+            </label>
             <button>Login</button>
         </form>
     </div>);
