@@ -1,0 +1,18 @@
+@import "./ColorValues";
+
+.notFoundPage {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: xx-large;
+  text-shadow: 3px 3px 1rem #000;
+
+  h1 {
+    color: $red;
+  }
+
+  h3 {
+    font-style: italic;
+  }
+}
