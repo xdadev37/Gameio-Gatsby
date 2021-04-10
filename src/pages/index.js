@@ -1,3 +1,4 @@
+import './i18n'
 import React, { Suspense, lazy } from 'react'
 const MainPage = lazy(() => import('./Main/index'))
 const Navbar = lazy(() => import('./Navbar/Navbar'))
@@ -7,7 +8,7 @@ const About = lazy(() => import('./About/About'))
 
 const Index = () => {
   return (
-    <Suspense fallback={<div>Loading ...</div>} >
+    <Suspense fallback={<div>Loading ...</div>}>
       <Navbar />
       <MainPage />
       <Guide />

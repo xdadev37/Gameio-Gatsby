@@ -12,6 +12,7 @@
   position: fixed;
   width: 100%;
   z-index: 1000;
+  direction: ltr !important;
 
   li {
     cursor: pointer;
@@ -52,6 +53,12 @@
 .rightNav {
   display: flex;
   float: right;
+
+  button {
+    @include Button;
+    padding: 1px;
+    flex-direction: row;
+  }
 
   li {
     transition-duration: 200ms;

@@ -1,7 +1,10 @@
 import React from 'react'
 import * as styles from '../../../SCSS/styles.module.scss'
+import { useTranslation } from 'react-i18next'
 
 const MainPage = () => {
+    const { t } = useTranslation()
+
     window.onkeyup = (e) => {
         if (e.keyCode === 34 ||
             e.keyCode === 40) {
@@ -34,7 +37,7 @@ const MainPage = () => {
 
     return (
         <div className={styles.mainPage} >
-            <p>Woe Voe Game</p>
+            <p>{t('trans.mainPage')}</p>
         </div>
     )
 }
